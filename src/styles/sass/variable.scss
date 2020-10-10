@@ -1,0 +1,41 @@
+//status colours
+$lime-green: hsl(163, 72%, 41%);
+$bright-red: hsl(356, 69%, 56%);
+
+//colours for the border of the cards
+$facebook: hsl(195, 100%, 50%);
+$twitter: hsl(203, 89%, 53%);
+$instagram: linear-gradient(
+  90deg,
+  rgba(253, 196, 104, 1) 0%,
+  rgba(223, 73, 150, 1) 100%
+);
+
+$youtube: hsl(348, 97%, 39%);
+
+//Dark Theme
+
+$toggle-dark: linear gradient hsl(210, 78%, 56%) to hsl(146, 68%, 55%);
+
+//Light Theme
+
+$toggle-light: hsl(230, 22%, 74%);
+
+//Dark Theme interface
+
+$very-dark-blue-bg: hsl(230, 17%, 14%);
+$very-dark-blue-top-bg: hsl(232, 19%, 15%);
+$dark-desaturated-blue-card: hsl(228, 28%, 20%);
+$desaturated-blue-text: hsl(228, 34%, 66%);
+$white-text: hsl(0, 0%, 100%);
+
+//Light Theme interface
+
+$white-bg: hsl(0, 0%, 100%);
+$very-pale-blue-top-bg: hsl(225, 100%, 98%);
+$light-grayish-blue-card: hsl(227, 47%, 96%);
+$dark-grayish-blue-text: hsl(228, 12%, 44%);
+$very-dark-blue-text: hsl(230, 17%, 14%);
+
+//chart
+$desaturated-purple-chart: hsl(243, 51%, 70%);

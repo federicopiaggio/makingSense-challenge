@@ -1,0 +1,33 @@
+.general-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #252a41;
+  padding: 10px 0;
+  margin: 15px;
+  color: #8b97c6;
+  height: 200px;
+  flex-basis: 25%;
+  max-width: 225px;
+  min-width: 190px;
+  border-radius: 3px; }
+  .general-card .user-name-container {
+    display: flex;
+    align-items: center;
+    padding: 1rem; }
+    .general-card .user-name-container img {
+      margin-right: 5px; }
+    .general-card .user-name-container .user-name {
+      font-size: 0.8rem; }
+  .general-card .general-number {
+    font-weight: 700;
+    font-size: 3.5rem;
+    color: white; }
+  .general-card .general-desc {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.8rem; }
+  .general-card .general-daily {
+    font-size: 0.8rem;
+    padding: 1rem; }

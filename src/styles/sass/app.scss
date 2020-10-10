@@ -1,0 +1,59 @@
+@import "./variable.scss";
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+#root {
+  background: linear-gradient(180deg, #1f212e 25%, #1e202a 25%);
+}
+.app {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  background: linear-gradient(
+    180deg,
+    $very-dark-blue-top-bg 25%,
+    $very-dark-blue-bg 25%
+  );
+}
+.general-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.border {
+  border-top: 4px solid white;
+}
+
+.facebook {
+  border-color: $facebook;
+}
+
+.instagram {
+  border-image-slice: 1;
+  border-image-source: $instagram;
+}
+
+.twitter {
+  border-color: $twitter;
+}
+
+.youtube {
+  border-color: $youtube;
+}
+
+.status-green {
+  color: $lime-green;
+}
+
+.status-red {
+  color: $bright-red;
+}
