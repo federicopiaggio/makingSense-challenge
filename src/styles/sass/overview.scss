@@ -19,8 +19,8 @@
   max-width: 225px;
   min-width: 200px;
   flex-direction: column;
-  background-color: $dark-desaturated-blue-card;
   border-radius: 5px;
+  cursor: pointer;
   .daily-row:first-child {
     margin-bottom: 20px;
   }
@@ -33,12 +33,10 @@
 }
 
 .daily-desc {
-  color: $desaturated-blue-text;
   font-size: 0.9rem;
 }
 
 .daily-number {
-  color: $white-text;
   font-weight: 700;
   font-size: 2rem;
 }

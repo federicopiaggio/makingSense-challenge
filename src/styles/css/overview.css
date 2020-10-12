@@ -16,8 +16,8 @@
   max-width: 225px;
   min-width: 200px;
   flex-direction: column;
-  background-color: #252a41;
-  border-radius: 5px; }
+  border-radius: 5px;
+  cursor: pointer; }
   .daily-card .daily-row:first-child {
     margin-bottom: 20px; }
 
@@ -27,11 +27,9 @@
   align-items: center; }
 
 .daily-desc {
-  color: #8b97c6;
   font-size: 0.9rem; }
 
 .daily-number {
-  color: white;
   font-weight: 700;
   font-size: 2rem; }
 

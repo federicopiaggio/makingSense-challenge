@@ -1,12 +1,52 @@
-/* import React, { Component } from 'react'
+import React from 'react';
+import GeneralCard from "./GeneralCard";
 
-export default class Dashboard extends Component {
-    render() {
-        return (
-            <div>
+const Dashboard = (props) => {
+    return (
+        <div className="general-container">
                 
-            </div>
-        )
-    }
+                    <GeneralCard                
+                    OpenModal = {props.OpenModal}
+                    classBorder="border facebook"
+                    status= "green"
+                    svgIcon={props.FacebookIcon}
+                    userName="@nathanf"
+                    generalNumber={1987}
+                    todayNumber={12}
+                    generalDesc="Followers"
+                    ></GeneralCard>
+                    <GeneralCard
+                    OpenModal = {props.OpenModal}
+                    classBorder="border twitter"
+                    status= "green"
+                    svgIcon={props.TwitterIcon}
+                    userName="@nathanf"
+                    generalNumber={1044}
+                    todayNumber={99}
+                    generalDesc="Followers"
+                    ></GeneralCard>
+                    <GeneralCard  
+                    OpenModal = {props.OpenModal}
+                    classBorder="border instagram"
+                    status= "green"
+                    svgIcon={props.InstagramIcon}
+                    userName="@realnathanf"
+                    generalNumber={11000}
+                    todayNumber={1099}
+                    generalDesc="Followers"
+                    ></GeneralCard>
+                    <GeneralCard   
+                    OpenModal = {props.OpenModal}
+                    classBorder="border youtube"
+                    status= "red"
+                    svgIcon={props.YoutubeIcon}
+                    userName="Nathan F."
+                    generalNumber={8239}
+                    todayNumber={144}
+                    generalDesc="Subscribers"
+                    ></GeneralCard>
+                </div>
+    );
 }
- */
+
+export default Dashboard;
