@@ -1,4 +1,7 @@
 @import "./variable.scss";
+@import "./dashboard.scss";
+@import "./overview.scss";
+@import "./modal.scss";
 
 //general styles
 
@@ -52,6 +55,13 @@ h3 {
   font-weight: 400;
 }
 
+h2,
+header {
+  opacity: 0;
+  animation: fadeIn 600ms ease-in-out forwards;
+  animation-delay: 300ms;
+}
+
 //borders styles
 
 .border {
@@ -73,16 +83,6 @@ h3 {
 
 .youtube {
   border-color: $youtube;
-}
-
-.dark-mode .general-card:hover,
-.dark-mode .daily-card:hover {
-  background-color: #333a56;
-}
-
-.light-mode .general-card:hover,
-.light-mode .daily-card:hover {
-  background-color: #e1e3f0;
 }
 
 //status colours class
@@ -132,18 +132,12 @@ h3 {
 }
 
 //variables colours class
+//------- DARK MODE ----------
 
 .black-bg {
   opacity: 1;
   transition: opacity 0.25s ease-in-out;
   background: linear-gradient(180deg, #1f212e 25%, #1e202a 25%);
-  background-attachment: fixed;
-}
-
-.light-bg {
-  opacity: 1;
-  transition: opacity 0.25s ease-in-out;
-  background: linear-gradient(180deg, #f5f7ff 25%, #ffffff 25%);
   background-attachment: fixed;
 }
 
@@ -175,6 +169,20 @@ h3 {
   }
 }
 
+.dark-mode .general-card:hover,
+.dark-mode .daily-card:hover {
+  background-color: #333a56;
+}
+
+//------- LIGHT MODE ----------
+
+.light-bg {
+  opacity: 1;
+  transition: opacity 0.25s ease-in-out;
+  background: linear-gradient(180deg, #f5f7ff 25%, #ffffff 25%);
+  background-attachment: fixed;
+}
+
 .light-mode {
   span.primary,
   h1,
@@ -200,7 +208,13 @@ h3 {
   }
 }
 
+.light-mode .general-card:hover,
+.light-mode .daily-card:hover {
+  background-color: #e1e3f0;
+}
+
 // Styles switch toggle
+
 .toggle-name {
   font-weight: 700;
 }
@@ -255,11 +269,79 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
-/* Rounded sliders */
 .slider.round {
   border-radius: 34px;
 }
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+// Media Querys
+
+@media (max-width: 1317px) {
+  .text-container {
+    flex-basis: 40%;
+    margin-bottom: 10px;
+  }
+  .modal-box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .toggle-container {
+    flex-direction: column;
+    label {
+      top: 10px;
+    }
+  }
+  .chart-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 490px) {
+  .modal-data {
+    flex-direction: column;
+  }
+  header div {
+    h1 {
+      font-size: 1.6rem;
+    }
+    span {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+//Animation
+
+@keyframes fadeInMove {
+  from {
+    opacity: 0;
+    top: 30px;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

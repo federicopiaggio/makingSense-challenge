@@ -20,6 +20,11 @@
   min-width: 200px;
   flex-direction: column;
   border-radius: 5px;
+  position: relative;
+  top: 30px;
+  opacity: 0;
+  animation: fadeInMove 700ms ease-in-out forwards;
+  animation-delay: 500ms;
   cursor: pointer;
   .daily-row:first-child {
     margin-bottom: 20px;
@@ -45,7 +50,3 @@
   font-size: 0.8rem;
   align-self: flex-end;
 }
-
-/* 
-
-daily-perc */

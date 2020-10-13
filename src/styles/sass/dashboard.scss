@@ -18,6 +18,12 @@
   max-width: 225px;
   min-width: 190px;
   border-radius: 3px;
+  position: relative;
+  top: 30px;
+  animation: fadeInMove 600ms ease-in-out forwards;
+  opacity: 0;
+  animation-delay: 300ms;
+
   cursor: pointer;
 
   .user-name-container {
